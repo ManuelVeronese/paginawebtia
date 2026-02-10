@@ -1,308 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina cecilia veronese</title>
+    <title>Pagina Cecilia Veronese</title>
     <!-- FONT AWESOME -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="styles.css">
-
 </head>
 <body>
-
-    <div class="menu-btn">
-        <i class="fas fa-bars fa-2x"></i>
-    </div>
-
-    <div class="container">
-        <nav class="nav-main">
-                <img src="img/brand.png" alt="cecilia veronese LOGO" class="nav-brand">
+    <header class="hero">
+        <nav class="nav-main container">
+            <div class="nav-brand">AV</div>
             <ul class="nav-menu">
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">Servicios</a>
-                </li>
-                <li>
-                    <a href="#">Quien soy</a>
-                </li>
-                <li>
-                    <a href="#">Contacto</a>
-                </li>
-                <li>
-                    <a href="#">Mas</a>
-                </li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#quien-soy">Quien soy</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
-            <ul class="nav-menu-right">
-              <li> 
-                <a href="#">
-                    <i class="fas fa-search"></i>
-                                </a>
-              </li>  
-            </ul>
-
-
-
-
-
-
-
-
+            <div class="menu-btn" aria-label="Abrir menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </div>
         </nav>
-        <hr>
 
-        <!-- SHOWCASE -->
-        <header class="showcase"> 
-            <h2> big news today </h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere exercitationem modi, excepturi, quam explicabo tempora culpa quas deleniti blanditiis voluptas doloribus velit iste, mollitia harum possimus labore amet dolorum minima.</p>  
-            <a href="#" class="btn"> read more <i class="fas fa-angle-double-right"></i> </a>  
-        
-        
-        </header>
-
-        <!-- NEWS CARDS -->
-        <div class="news-cards">
-            <div>
-                <img src="img/news1.jpg" alt="news 1">
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem assumenda perspiciatis debitis aut iste nisi mollitia laboriosam dolore nostrum repellendus.</p>
-                <a href="#"> learn more <i class="fas fa-angle-double-right"></i></a>
-            </div>
-            <div>
-                <img src="img/news2.jpg" alt="news 2">
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem assumenda perspiciatis debitis aut iste nisi mollitia laboriosam dolore nostrum repellendus.</p>
-                <a href="#"> learn more <i class="fas fa-angle-double-right"></i></a>
-            </div>
-            <div>
-                <img src="img/news3.jpg" alt="news 3">
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem assumenda perspiciatis debitis aut iste nisi mollitia laboriosam dolore nostrum repellendus.</p>
-                <a href="#"> learn more <i class="fas fa-angle-double-right"></i></a>
-            </div>
-            <div>
-                <img src="img/news4.jpg" alt="news 4">
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem assumenda perspiciatis debitis aut iste nisi mollitia laboriosam dolore nostrum repellendus.</p>
-                <a href="#"> learn more <i class="fas fa-angle-double-right"></i></a>
-            </div>
-
+        <div id="home" class="hero-content container">
+            <h1>Damos voz a tu marca en el mundo digital</h1>
+            <p>Creamos puentes de comunicacion autentica entre tu proposito y tu audiencia ideal</p>
+            <a class="btn" href="#servicios">Comencemos</a>
         </div>
-        
-        <!-- CARDS BANNER ONE -->
+    </header>
 
-        <section class="cards-banner-one">
+    <main>
+        <section id="servicios" class="section services">
+            <div class="container">
+                <h2>Servicios</h2>
 
-            <div class="content">
-                <h2>Lorem, ipsum dolor.</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi at earum corrupti itaque odio consectetur non id consequatur dolores ad.</p>
-                <a href="#" class="btn"> learn more <i class="fas fa-angle-double-right"></i></a>
+                <div class="service-row">
+                    <div class="service-media">
+                        <img src="imgPagina/cohete%20emoji%201.png" alt="Cohete" />
+                    </div>
+                    <div class="service-body">
+                        <h3>Estrategia de Marca &amp; Marketing</h3>
+                        <p>Diseno planes que traducen tu identidad en ventas y fidelidad, con un enfoque en la insercion cultural y relevancia social.</p>
+                    </div>
+                </div>
 
-            </div>
+                <div class="service-row reverse">
+                    <div class="service-media">
+                        <img src="imgPagina/apreton%20de%20manos%201.png" alt="Apreton de manos" />
+                    </div>
+                    <div class="service-body">
+                        <h3>Comunicacion Institucional e Interna</h3>
+                        <p>Ayudo a alinear equipos y mejorar el clima organizacional. Entiendo que una marca fuerte hacia afuera empieza con un equipo solido hacia adentro.</p>
+                    </div>
+                </div>
 
+                <div class="service-row">
+                    <div class="service-media">
+                        <img src="imgPagina/foco%201.png" alt="Foco" />
+                    </div>
+                    <div class="service-body">
+                        <h3>Transformacion Digital para PYMES</h3>
+                        <p>Acompano procesos de profesionalizacion para que los emprendedores den el salto hacia una estructura solida y digitalizada.</p>
+                    </div>
+                </div>
 
-        </section>
-
-        <!-- NEWS CARDS -->
-        <div class="news-cards">
-            <div>
-                <img src="img/news1.jpg" alt="news 1">
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem assumenda perspiciatis debitis aut iste nisi mollitia laboriosam dolore nostrum repellendus.</p>
-                <a href="#"> learn more <i class="fas fa-angle-double-right"></i></a>
-            </div>
-            <div>
-                <img src="img/news2.jpg" alt="news 2">
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem assumenda perspiciatis debitis aut iste nisi mollitia laboriosam dolore nostrum repellendus.</p>
-                <a href="#"> learn more <i class="fas fa-angle-double-right"></i></a>
-            </div>
-            <div>
-                <img src="img/news3.jpg" alt="news 3">
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem assumenda perspiciatis debitis aut iste nisi mollitia laboriosam dolore nostrum repellendus.</p>
-                <a href="#"> learn more <i class="fas fa-angle-double-right"></i></a>
-            </div>
-            <div>
-                <img src="img/news4.jpg" alt="news 4">
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem assumenda perspiciatis debitis aut iste nisi mollitia laboriosam dolore nostrum repellendus.</p>
-                <a href="#"> learn more <i class="fas fa-angle-double-right"></i></a>
-            </div>
-
-        </div>
-
-        <section class="cards-banner-two">
-            <div class="content">
-                <h2>Lorem, ipsum dolor.</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem assumenda perspiciatis debitis aut iste nisi mollitia laboriosam dolore nostrum repellendus.</p>
-
-                <a href="#" class="btn"> learn more <i class="fas fa-angle-double-right"></i></a>
-
-
-
+                <div class="service-row reverse">
+                    <div class="service-media">
+                        <img src="imgPagina/sombrero%20graduado%201.png" alt="Sombrero de graduacion" />
+                    </div>
+                    <div class="service-body">
+                        <h3>Capacitacion In-Company</h3>
+                        <p>Desarrollo programas de formacion a medida en areas de comunicacion y comercializacion.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="social">
-
-            <p>follow cecilia</p>
-            <div class="links">
-
-                <a href="#">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-
-                <a href="#">
-                    <i class="fab fa-instagram"></i>
-                </a>
-
-                <a href="#">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-
+        <section id="quien-soy" class="section about">
+            <div class="container">
+                <h2>Quien soy?</h2>
+                <div class="about-card">
+                    <div class="about-text">
+                        <p>Mi nombre es Cecilia Andrea Veronese. Soy Comunicadora Social y Consultora Estrategica. Mi proposito es ayudar a PYMES y organizaciones a transformar su comunicacion en resultados tangibles y en una ventaja competitiva real.</p>
+                    </div>
+                    <div class="about-photo">
+                        <img src="imgPagina/WhatsApp%20Image%202026-02-05%20at%2011.45.00%20(1)%201.png" alt="Cecilia Andrea Veronese" />
+                    </div>
+                </div>
             </div>
         </section>
-    </div>
 
-    <div class="footer-links">
-        <div class="footer-container">
+        <section id="contacto" class="section contact">
+            <div class="container">
+                <h2>Contacto</h2>
+                <div class="contact-card">
+                    <p>Si estas buscando profesionalizar la voz de tu empresa o necesitas una mirada experta sobre como conectar con tu audiencia hoy, hablemos.</p>
+                    <div class="contact-icons">
+                        <a href="https://www.instagram.com/ceci__veronese/" aria-label="Instagram" target="_blank" rel="noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/5493534265735" aria-label="WhatsApp" target="_blank" rel="noreferrer"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/in/cecilia-andrea-veronese-bb23493ab?utm_source=share_via&utm_content=profile&utm_medium=member_android" aria-label="LinkedIn" target="_blank" rel="noreferrer"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:ceciliax142@gmail.com" aria-label="Correo"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-            <ul>
-
-
-                <li>
-
-
-                    <a href="#">
-                        <h3>title one</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">Blockchain </a>
-                </li>
-                <li>
-                    <a href="#">Blockchain </a>
-                </li>
-                <li>
-                    <a href="#">Blockchain </a>
-                </li>
-                <li>
-                    <a href="#">Blockchain </a>
-                </li>
-                <li>
-                    <a href="#">Blockchain </a>
-                </li>
-                <li>
-                    <a href="#">Blockchain </a>
-                </li>
-            </ul>
-
-            <ul>
-
-
-                <li>
-
-
-                    <a href="#">
-                        <h3>title one</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">Blockchain </a>
-                </li>
-                <li>
-                    <a href="#">Blockchain </a>
-                </li>
-                <li>
-                    <a href="#">Blockchain </a>
-                </li>
-                <li>
-                    <a href="#">Blockchain </a>
-                </li>
-                <li>
-                    <a href="#">Blockchain </a>
-                </li>
-                <li>
-                    <a href="#">Blockchain </a>
-                </li>
-            </ul>
-
-            <ul>
-
-
-                <li>
-
-
-                    <a href="#">
-                        <h3>title one</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">Blockchain </a>
-                </li>
-                <li>
-                    <a href="#">Blockchain </a>
-                </li>
-                <li>
-                    <a href="#">Blockchain </a>
-                </li>
-                <li>
-                    <a href="#">Blockchain </a>
-                </li>
-                <li>
-                    <a href="#">Blockchain </a>
-                </li>
-                <li>
-                    <a href="#">Blockchain </a>
-                </li>
-            </ul>
-
-            <ul>
-
-
-                <li>
-
-
-                    <a href="#">
-                        <h3>title one</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">Blockchain </a>
-                </li>
-                <li>
-                    <a href="#">Blockchain </a>
-                </li>
-                <li>
-                    <a href="#">Blockchain </a>
-                </li>
-                <li>
-                    <a href="#">Blockchain </a>
-                </li>
-                <li>
-                    <a href="#">Blockchain </a>
-                </li>
-                <li>
-                    <a href="#">Blockchain </a>
-                </li>
-            </ul>
-
-
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <h4>AV</h4>
+            </div>
+            <div>
+                <h4>Marca y Proposito</h4>
+                <p>Cecilia Andrea Veronese</p>
+                <p>Comunicadora Social &amp; Consultora Estrategica</p>
+            </div>
+            <div>
+                <h4>Servicios</h4>
+                <p>Consultoria para PYMES</p>
+                <p>Estrategia de Marketing</p>
+                <p>Comunicacion Institucional</p>
+                <p>Capacitaciones</p>
+            </div>
+            <div>
+                <h4>Contacto y Redes</h4>
+                <p>LinkedIn: Cecilia Andrea Veronese</p>
+                <p>Email: ceciliax142@gmail.com</p>
+                <p>Ubicacion: Villa Maria, Cordoba, Argentina</p>
+            </div>
         </div>
-    </div>
-
-    <footer class="footer">
-        <h3>tia ceci copyright</h3>
+        <div class="container footer-bottom">
+            <p>© 2026 Cecilia Andrea Veronese. Todos los derechos reservados. Diseno y desarrollo por Manuel Agustin Veronese.</p>
+        </div>
     </footer>
-
 
     <!-- SCROLL REVEAL -->
     <script src="https://unpkg.com/scrollreveal"></script>
