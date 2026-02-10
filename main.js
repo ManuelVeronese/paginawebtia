@@ -31,16 +31,6 @@ window.addEventListener('scroll', () => {
 
     if (currentScrollY <= 4) {
         navMain.classList.remove('nav-hidden');
-    }
-
-    if (currentScrollY <= 4) {
-        navMain.classList.remove('nav-hidden');
-    } else if (isMobile) {
-        if (currentScrollY > scrollThreshold && scrollingDown) {
-            navMain.classList.add('nav-hidden');
-        } else {
-            navMain.classList.remove('nav-hidden');
-        }
     } else if (currentScrollY > scrollThreshold && scrollingDown) {
         navMain.classList.add('nav-hidden');
     } else {
