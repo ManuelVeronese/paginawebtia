@@ -13,6 +13,7 @@
     --text: #f6f7ff;
     --muted: #c6cbe8;
     --accent: #7fd3ff;
+    --nav-height: 68px;
 }
 
 body {
@@ -20,6 +21,16 @@ body {
     color: var(--text);
     font-family: "Nunito", sans-serif;
     font-size: 16px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
 }
 
 a {
@@ -36,17 +47,14 @@ ul {
     margin: 0 auto;
 }
 
-.menu-btn {
-    margin-left: auto;
-    z-index: 7;
-    display: none;
-    font-size: 1.4rem;
-    color: var(--text);
-}
 
 /* Hero */
 .hero {
-    padding: 110px 0 70px;
+    min-height: 100vh;
+    padding: var(--nav-height) 0 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .nav-main {
@@ -58,7 +66,8 @@ ul {
     align-items: center;
     justify-content: space-between;
     gap: 30px;
-    padding: 14px 4%;
+    height: var(--nav-height);
+    padding: 0 4%;
     background: rgba(11, 20, 52, 0.28);
     backdrop-filter: blur(14px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -89,6 +98,8 @@ ul {
     font-size: 1.2rem;
     font-weight: 700;
     letter-spacing: 1px;
+    color: var(--text);
+    margin-right: 12px;
 }
 
 .nav-menu {
@@ -97,6 +108,8 @@ ul {
     font-size: 0.95rem;
     color: var(--muted);
     z-index: 5;
+    align-items: center;
+    width: 100%;
 }
 
 .nav-menu a {
@@ -151,6 +164,7 @@ ul {
 /* Sections */
 .section {
     padding: 42px 0 50px;
+    scroll-margin-top: var(--nav-height);
 }
 
 .section h2 {
@@ -325,42 +339,26 @@ ul {
 }
 
 @media (max-width: 700px) {
-    .hero {
-        padding-top: 90px;
+    :root {
+        --nav-height: 88px;
     }
 
-    .menu-btn {
-        display: block;
+    .hero {
+        padding-top: var(--nav-height);
     }
 
     .nav-main {
-        position: relative;
+        height: auto;
+        padding: 10px 4% 12px;
+        flex-wrap: wrap;
+        gap: 12px;
     }
 
     .nav-menu {
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        width: min(240px, 75vw);
-        background: rgba(10, 18, 50, 0.95);
-        padding: 80px 22px 22px;
-        flex-direction: column;
-        gap: 18px;
-        transform: translateX(-100%);
-        opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
-        transition: transform 0.35s ease, opacity 0.25s ease;
-        box-shadow: 16px 0 28px rgba(9, 18, 50, 0.45);
-        z-index: 7;
-    }
-
-    .nav-menu.show {
-        transform: translateX(0%);
-        opacity: 1;
-        visibility: visible;
-        pointer-events: auto;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 14px;
     }
 }
 

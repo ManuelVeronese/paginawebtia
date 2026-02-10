@@ -1,20 +1,4 @@
-const menuBtn = document.querySelector('.menu-btn');
-const navMenu = document.querySelector('.nav-menu');
 const navMain = document.querySelector('.nav-main');
-
-menuBtn.addEventListener('click', () => {
-    const isOpen = navMenu.classList.toggle('show');
-    menuBtn.setAttribute('aria-expanded', String(isOpen));
-    navMain.classList.toggle('menu-open', isOpen);
-});
-
-navMenu.querySelectorAll('a').forEach((link) => {
-    link.addEventListener('click', () => {
-        navMenu.classList.remove('show');
-        menuBtn.setAttribute('aria-expanded', 'false');
-        navMain.classList.remove('menu-open');
-    });
-});
 
 const sr = ScrollReveal({
     distance: '24px',
@@ -47,12 +31,6 @@ window.addEventListener('scroll', () => {
 
     if (currentScrollY <= 4) {
         navMain.classList.remove('nav-hidden');
-    }
-
-    if (navMain.classList.contains('menu-open')) {
-        navMain.classList.remove('nav-hidden');
-        lastScrollY = currentScrollY;
-        return;
     }
 
     if (currentScrollY <= 4) {
