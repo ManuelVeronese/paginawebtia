@@ -54,7 +54,7 @@ ul {
     padding: var(--nav-height) 0 70px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     padding-top: calc(var(--nav-height) + 60px);
 }
 
