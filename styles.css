@@ -55,6 +55,7 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: calc(var(--nav-height) + 60px);
 }
 
 .nav-main {
