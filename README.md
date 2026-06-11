@@ -1,6 +1,6 @@
-# KMart Marketing - Landing Page
+# Espacio AV
 
-Esta es una página web moderna, profesional y totalmente responsiva desarrollada para [Nombre de la tía/Negocio]. El objetivo del proyecto fue crear una presencia digital sólida que permitiera mostrar [productos/servicios] de manera elegante y funcional.
+Esta es una página web moderna, profesional y totalmente responsiva desarrollada para Cecilia Veronese. El objetivo del proyecto fue crear una presencia digital sólida que permitiera mostrar servicios de Marketing de manera elegante y funcional.
 
 ## 🚀 Características
 
@@ -17,15 +17,4 @@ Esta es una página web moderna, profesional y totalmente responsiva desarrollad
 - **ScrollReveal.js:** Biblioteca para animaciones de entrada al desplazar la página.
 - **Google Fonts:** Tipografía profesional seleccionada para mejorar la legibilidad.
 
-## 📸 Vista Previa
-
-Falta agregar imagen
-
-## 📂 Estructura del Proyecto
-
-```text
-├── img/                # Recursos gráficos e imágenes
-├── css/                # Hojas de estilo (styles.css)
-├── js/                 # Lógica de animaciones y navegación
-└── index.html          # Archivo principal
 
